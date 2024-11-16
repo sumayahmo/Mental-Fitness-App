@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الصحة العقلية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبًا في تطبيق الصحة العقلية</h1>
+        <p>أجب على الأسئلة التالية للحصول على تقييم لصحتك العقلية.</p>
+
+        <!-- السؤال 1 -->
+        <label for="stress">كم مرة تشعر بالتوتر؟</label><br>
+        <input type="radio" id="stress1" name="stress" value="1"> أبدًا<br>
+        <input type="radio" id="stress2" name="stress" value="2"> نادرًا<br>
+        <input type="radio" id="stress3" name="stress" value="3"> أحيانًا<br>
+        <input type="radio" id="stress4" name="stress" value="4"> كثيرًا<br>
+        <input type="radio" id="stress5" name="stress" value="5"> دائمًا<br><br>
+
+        <!-- السؤال 2 -->
+        <label for="balance">كيف تشعر بتوازن حياتك (العمل، الشخصي، إلخ)؟</label><br>
+        <input type="radio" id="balance1" name="balance" value="1"> غير متوازن جدًا<br>
+        <input type="radio" id="balance2" name="balance" value="2"> غير متوازن<br>
+        <input type="radio" id="balance3" name="balance" value="3"> محايد<br>
+        <input type="radio" id="balance4" name="balance" value="4"> متوازن<br>
+        <input type="radio" id="balance5" name="balance" value="5"> متوازن جدًا<br><br>
+
+        <!-- زر الإرسال -->
+        <button onclick="submitSurvey()">إرسال التقييم</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
